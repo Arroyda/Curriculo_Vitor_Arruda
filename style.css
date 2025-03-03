@@ -214,4 +214,75 @@ img {
     }
 }
 
+/* ===================================================== */
+/* RESPONSIVIDADE PARA 375px (MOBILE) */
+/* ===================================================== */
+
+@media (max-width: 375px) {
+    /* Ajustes gerais */
+    body {
+        padding: 10px !important;
+        min-height: auto;
+        display: block !important; /* Remove flex para scroll vertical */
+    }
+
+    /* Cards principais */
+    .card, .card2, .card3, .card4 {
+        width: 95% !important;
+        margin: 15px 0 !important;
+        flex-direction: column;
+    }
+
+    /* Container de cards lado a lado */
+    .cards-wrapper {
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 10px !important;
+        width: 100% !important;
+    }
+
+    /* Foto de perfil */
+    #fotoPerfil {
+        width: 150px !important;
+        height: 150px !important;
+        margin: 0 auto 15px !important; /* Centraliza e adiciona espaço abaixo */
+        order: 0 !important; /* Força a imagem ficar acima em mobile */
+    }
+
+    /* Textos */
+    .card-content h2 {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+
+    .card-content p, .card2 p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Logotipos */
+    #logo1, #logo {
+        width: 80px !important;
+        height: auto !important; /* Mantém proporção */
+        margin: 10px auto !important;
+    }
+
+    /* Conhecimentos técnicos */
+    .card4 {
+        max-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    #logo2 {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    /* Ajuste específico para textos longos */
+    .card2 p, .card3 p {
+        text-align: justify !important;
+        hyphens: auto !important; /* Quebra de palavras */
+    }
+}
+
 
