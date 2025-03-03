@@ -13,10 +13,33 @@
 
 #titulo2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
 }
 
-.body {
-    background-color: royalblue;
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#logo1 {
+    width: 200px;
+    height: 100px;
+}
+
+#logo2 {
+    width: 48px; /* Tamanho da imagem */
+    height: 48px; /* Tamanho da imagem */
+}
+
+body {
+    background-color: #1b1f33; /* Cor de fundo da tela (exemplo: cinza escuro) */
+    margin: 0; /* Remove a margem padrão do body */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff; /* Cor do texto (opcional, para contraste) */
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    display: flex;
 }
 
 /* Estilos do card */
@@ -52,9 +75,30 @@
     transition: transform 0.3s;
 }
 
+.card4 {
+    background-color: #ffffff; /* Cor de fundo do card */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+    max-width: 300px; /* Largura máxima do card */
+    margin: 0 auto; /* Centraliza o card na tela */
+}
+
 .card-container {
     display: flex;
     align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.card-container2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333; /* Cor do texto */
+}
+
+.card4 p{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #333; /* Cor do texto */
 }
 
 /* Efeito de hover no card */
@@ -80,7 +124,7 @@
 
 .card-content h2 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
     margin: 0;
 }
 
@@ -88,20 +132,26 @@
     font-size: 18px;
     color: #666;
     margin: 10px 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card2 p {
     font-size: 18px;
     color: #666;
     margin: 10px 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.card3 p {
-    font-size: 18px;
-    color: #666;
-    margin: 10px 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.card3 {
+    background-color: #ffffff; /* Cor de fundo dos cards */
+    padding: 20px; /* Espaçamento interno dos cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
+
+.cards-wrapper {
+    display: flex; /* Coloca os cards lado a lado */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno do container */
 }
 
