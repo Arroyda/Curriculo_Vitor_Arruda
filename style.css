@@ -150,8 +150,68 @@ body {
 }
 
 .cards-wrapper {
-    display: flex; /* Coloca os cards lado a lado */
+    display: flex;
+    flex-wrap: wrap; /* Quebra linha quando necessário */
     gap: 20px; /* Espaçamento entre os cards */
     padding: 20px; /* Espaçamento interno do container */
 }
+
+img {
+    max-width: 100%; /* Nunca ultrapassa o container */
+    height: auto; /* Mantém proporção */
+}
+
+/* Telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .card {
+        width: 90% !important; /* Ocupa 90% da tela */
+        flex-direction: column; /* Empilha elementos */
+    }
+}
+
+/* Telas médias (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 80%;
+    }
+}
+
+/* Esconde menu em telas pequenas */
+@media (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+}
+
+/* =========== RESPONSIVIDADE =========== */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Altera direção do flex */
+        padding: 10px;
+    }
+
+    .card, .card2, .card3, .card4 {
+        width: 100% !important; /* Ocupa toda a largura */
+        margin: 10px 0;
+    }
+
+    .cards-wrapper {
+        flex-direction: column; /* Cards empilhados */
+    }
+
+    #fotoPerfil {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px; /* Centraliza a imagem */
+        order: 0; /* Reordena elementos no flex */
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+}
+
 
