@@ -3,7 +3,6 @@
     height: 250px;
     margin-left: 20px; /* Adiciona um espaço entre o texto e a imagem */
     order: 2; /* Coloca a imagem à direita */
-    border-radius: 10px;
 }
 
 #titulo{
